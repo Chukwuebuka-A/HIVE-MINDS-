@@ -1,0 +1,164 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  animation: bgSlideshow 12s infinite;
+}
+
+@keyframes bgSlideshow {
+  0% {
+    background-image: url("./asset/harrison 2.jpeg");
+  }
+  33% {
+    background-image: url("./asset/harrison2.5.jpeg");
+  }
+  66% {
+    background-image: url("./asset/harrison\ 3.jpeg");
+  }
+  100% {
+    background-image: url("./asset/harrison2.5.jpeg");
+  }
+}
+
+
+.page-header {
+  padding: 30px 20px;
+  background: #16305a;
+  color: #ffffff;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header-text {
+  text-align: center;
+  flex: 1;
+}
+
+.logo {
+  width: 90px;
+  height: auto;
+}
+
+.left-logo {
+  margin-right: 10px;
+}
+
+.right-logo {
+  margin-left: 10px;
+}
+
+.page-caption {
+  font-size: 14px;
+  margin-top: 8px;
+  opacity: 0.9;
+}
+
+
+.session-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 30px;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+
+.session-card {
+  background: #16305a;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  color: #ddd;
+}
+
+
+.session-card h2 {
+  color: #ffffff;
+  margin-top: 0;
+}
+
+.session-card p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+
+.btn-group {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 16px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #f5b400;
+  color: #16305a;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e0a800;
+}
+
+
+.progress-bar {
+  width: 100%;
+  height: 15px;
+  background: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: #16305a;
+  transition: width 0.3s ease;
+}
+
+
+.back-container {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.back-link {
+  text-decoration: none;
+  color: #f5b400;
+  font-weight: bold;
+}
+
+.ules-note {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #ddd;
+  text-align: center;
+  line-height: 1.4;
+}
+
+
+@media (min-width: 1024px) {
+  .session-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1400px) {
+  .session-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

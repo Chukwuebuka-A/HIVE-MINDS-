@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Session | Live Campus Hub</title>
+  <link rel="stylesheet" href="checkin.css">
+</head>
+<body>
+
+<header class="page-header">
+  <div class="header-content">
+
+    <img src="./asset/checkin-logo.jpeg" alt="WLV Logo" class="logo left-logo">
+
+    <div class="header-text">
+      <h1>Welcome to Study Session — where effort meets reward.</h1>
+      <p class="page-caption">Track your library engagement and performance</p>
+    </div>
+
+    <img src="./asset/checkin-logo.jpeg" alt="WLV Logo" class="logo right-logo">
+
+  </div>
+</header>
+
+<section class="session-container">
+
+  <div class="session-card">
+    <h2>Current Session</h2>
+
+    <p><strong>Status:</strong> <span id="status">Not Started</span></p>
+    <p><strong>Check In Time:</strong> <span id="check-in-time">--:--</span></p>
+    <p><strong>Check Out Time:</strong> <span id="check-out-time">--:--</span></p>
+    <p><strong>Duration:</strong> <span id="duration">0 mins</span></p>
+    <p><strong>Points Earned:</strong> <span id="points">0</span></p>
+
+    <div class="btn-group">
+      <button id="check-in-btn">Check In</button>
+      <button id="check-out-btn">Check Out</button>
+    </div>
+  </div>
+
+  
+<div class="session-card">
+  <h2>University Library Engagement Score (ULES)</h2>
+  <p id="ules-score">0%</p>
+
+  <div class="progress-bar">
+    <div class="progress-fill" id="progress-fill"></div>
+  </div>
+
+  <p class="ules-note">
+    Track your engagement score to qualify for the SU Award as the best participating student.
+  </p>
+</div>
+
+</section>
+
+<div class="back-container">
+  <a href="dashboard.html" class="back-link">← Back to Dashboard</a>
+</div>
+
+</body>
+</html>
