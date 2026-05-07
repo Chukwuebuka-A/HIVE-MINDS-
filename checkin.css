@@ -17,7 +17,7 @@ body {
     background-image: url("./asset/harrison2.5.jpeg");
   }
   66% {
-    background-image: url("./asset/harrison\ 3.jpeg");
+    background-image: url("./asset/harrison 3.jpeg");
   }
   100% {
     background-image: url("./asset/harrison2.5.jpeg");
@@ -34,7 +34,7 @@ body {
 .header-content {
   display: flex;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-between;
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -82,7 +82,6 @@ body {
   color: #ddd;
 }
 
-
 .session-card h2 {
   color: #ffffff;
   margin-top: 0;
@@ -126,8 +125,10 @@ button:hover {
 .progress-fill {
   height: 100%;
   width: 0%;
-  background: #16305a;
-  transition: width 0.3s ease;
+  background: linear-gradient(90deg, #f5b400, #ffd700);
+  transition: width 0.5s ease;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(245, 180, 0, 0.6);
 }
 
 
@@ -142,12 +143,18 @@ button:hover {
   font-weight: bold;
 }
 
+
 .ules-note {
   margin-top: 12px;
   font-size: 13px;
   color: #ddd;
   text-align: center;
   line-height: 1.4;
+}
+
+.highlight-time {
+  font-weight: bold;
+  color: #ffd700;
 }
 
 
