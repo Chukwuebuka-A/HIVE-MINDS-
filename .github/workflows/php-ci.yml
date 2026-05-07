@@ -5,15 +5,11 @@ on: [push]
 jobs:
   php-check:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Set up PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: '8.2'
-
-      - name: Lint PHP files
-        run: find . -type f -name "*.php" -print0 | xargs -0 -n1 php -l
+      - name: Check PHP syntax
+        run: |
+          for f in $(git ls-files '*.php'); do
+            php -l "$f" || exit 1
+          done
