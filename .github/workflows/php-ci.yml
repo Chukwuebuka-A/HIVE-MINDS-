@@ -1,0 +1,12 @@
+name: PHP CI Check
+
+on: [push]
+
+jobs:
+  php-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Check PHP syntax
+        run: find . -name "*.php" -exec php -l {} \;
